@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./shop.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8">
+    </script>
+    <meta name="robots" content="noindex,follow" />
+    <link rel="icon" href="../Images/Frame.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="main-header d-flex">
+        <div class="logo-part" style="margin-bottom: 50px;">
+            <img src="../Images/line.png" alt="">
+        </div>
+        <div class="cart-icon">
+            <img src="../Images/Ellipse 4 (1).png" alt="" class="icon">
+
+        </div>
+    </div>
+    <h1 class="logo-part1" style="margin-left: 90px;">Shop by Categery</h1>
+    <h2 id="h3-of-head1" style="margin-left: 90px;">Cart<i class="fa-solid fa-trash fa-2xs"
+            style="color: #2f3032;margin-left: 83%;"></i></h2>
+    <div class="shopping-cart">
+        <!-- Title -->
+
+        <!-- Product #1 -->
+        <div class="item">
+
+            <div class="image">
+                <img src="../Images/Grocery.png" alt="" width="150" />
+            </div>
+
+            <div class="description">
+                <span>Grocery</span>
+            </div>
+
+            <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                    <img src="../Images/plus.svg" alt="" />
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                    <img src="../Images/minus-small.svg" alt="" />
+                </button>
+            </div>
+
+            <div class="total-price">$25.00</div>
+        </div>
+
+        <!-- Product #2 -->
+        <div class="item">
+
+            <div class="image">
+                <img src="../Images/Vegatables.png" alt="" width="150" />
+            </div>
+
+            <div class="description">
+                <span>Vegetables</span>
+            </div>
+
+            <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                    <img src="../Images/plus.svg" alt="" />
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                    <img src="../Images/minus-small.svg" alt="" />
+                </button>
+            </div>
+
+            <div class="total-price">$45.00</div>
+        </div>
+
+        <!-- Product #3 -->
+        <div class="item">
+
+            <div class="image">
+                <img src="../Images/Fruits.png" alt="" />
+            </div>
+
+            <div class="description">
+                <span>Fruits</span>
+            </div>
+
+            <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                    <img src="../Images/plus.svg" alt="" />
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                    <img src="../Images/minus-small.svg" alt="" />
+                </button>
+            </div>
+
+            <div class="total-price">$35.00</div>
+        </div>
+        <div class="total">
+            <h1>Total</h1>
+            <div class="total-price" style="margin-left: 71%;">$185.00</div>
+        </div>
+    </div>
+    <p class="pare" style="margin-top: 0%;margin-left: 20%;">3 items</p>
+    <div>
+    <button class="sign" style="margin-left: 40%; margin-bottom: 30px;" onclick="handleLogoutButtonClick()">Next</button>
+</div>
+    <footer style="margin-left: 18%;">
+        <ul>
+            <li><a href="../Home/home.html" style="text-decoration: none;"><i class="fa-solid fa-house"
+                        style="color: #3e3f41; margin-left: 10px;"></i> </a>
+                <p style="margin-top: 10px; font-size: 18px; margin-right: 10px;">Home</p>
+            </li>
+            <li><a href="../chart/chat.html" style="text-decoration: none;"><i class="fa-solid fa-message"
+                        style="color: #3e3f41; margin-left: 45px; margin-top: 1px;"></i></a>
+                <p style="margin-top: 10px; font-size: 18px; margin-left: 20px;">Message</p>
+            </li>
+            <li><a href="./shop.html"><i class="fa-solid fa-cart-shopping"
+                        style="margin-left: 25px; color: #00ff2a;"></i></a>
+                <p style="margin-top: 10px; font-size: 18px; margin-left: 20px;">Cart</p>
+            </li>
+            <li><a href="../Settings/sett.html"><i class="fa-solid fa-user" style="margin-left: 40px; color: #3e3f41;"></i></a>
+                <p style="margin-top: 10px; font-size: 18px; margin-left: 20px;">Account</p>
+            </li>
+        </ul>
+    </footer>
+    <script src="./shop.js"></script>
+</body>
+
+</html>
